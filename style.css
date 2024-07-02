@@ -58,7 +58,6 @@ img {
   grid-column: 2/6;
   grid-row: 1;
   padding: 20px;
-  
 }
 .header-top {
   display: grid;
@@ -125,7 +124,6 @@ button{
 .main-content{
   grid-column: 2/6;
   grid-row: 2;
-  border: 1px solid #a02525;
 }
 .sidebar{
   background: #1992d4;
@@ -156,6 +154,47 @@ li {
 .nav2{
   margin-top: 40px;
 }
+.main-content {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "project annoce"
+  "project tren";
+  background: #e2e8f0;
 
+}
+.projects{
+  grid-area: project;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.annoucement{
+ grid-area: annoce;
+  color: red;
+
+}
+.trending {
+  grid-area: tren;
+  color: yellow;
+}
+.card{
+  width: 270px;
+  border: none;
+  border-left: 8px solid yellow;
+  border-radius: 20px;
+  background: #fff;
+  padding: 10px;
+  box-shadow: 0 4px 3px 1px grey;
+}
+.card h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.card p {
+  font-size: 0.8rem;
+  color: rgba(90, 88, 88, 0.829);
+}
 
 
